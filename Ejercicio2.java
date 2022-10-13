@@ -11,7 +11,7 @@ public class Ejercicio2 {
         Scanner s = new Scanner(System.in);
         System.out.print("Please introduce amount in euros: ");
         float euros = s.nextFloat();
-        float pesetas = euros * 166.386f;
+        int pesetas = Math.round(euros * 166.386f);
         System.out.print(euros + " euros = " + pesetas + " pesetas");
     }
 }

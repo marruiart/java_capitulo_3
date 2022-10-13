@@ -10,8 +10,8 @@ public class Ejercicio3 {
     public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
         System.out.print("Please introduce amount in pesetas: ");
-        float pesetas = s.nextFloat();
+        int pesetas = s.nextInt();
         float euros = pesetas / 166.386f;
-        System.out.print(pesetas + " pesetas = " + euros + " euros");
+        System.out.printf("%d pesetas = %.2f euros", pesetas, euros);
     }
 }

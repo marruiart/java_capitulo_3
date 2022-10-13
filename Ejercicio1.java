@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 /**
- * This program receives two numbers through the standard input and prints their product
+ * This program receives two numbers through the standard input and prints their
+ * product
  * 
  * @autor Marina Ruiz
  */
@@ -13,6 +14,9 @@ public class Ejercicio1 {
         double x = s.nextFloat();
         System.out.print("Please introduce another number: ");
         double y = s.nextFloat();
-        System.out.print(x + " * " + y + " = " + x * y);
+        if (y < 0)
+            System.out.printf("%.1f * (%.1f) = %.1f", x, y, x * y);
+        else
+            System.out.printf("%.1f * %.1f = %.1f", x, y, x * y);
     }
 }
